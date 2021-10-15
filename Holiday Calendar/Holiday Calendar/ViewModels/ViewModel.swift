@@ -12,7 +12,7 @@ public class ViewModel {
 
     // MARK: Variables
 
-    let calendar = Calendar.current
+    let calendar = Calendar.init(identifier: .gregorian)
     var indexToUpdate = 0
     var loadingData = false
 
