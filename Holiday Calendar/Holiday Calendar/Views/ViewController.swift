@@ -165,13 +165,18 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     }
 
     @IBAction func changeMonthYear(_ sender: UIButton) {
+        // set selection to current month/year
         monthYearPicker.selectRow(viewModel.setDefault(component: 0), inComponent: 0, animated: false)
         monthYearPicker.selectRow(viewModel.setDefault(component: 1), inComponent: 1, animated: false)
         
         if pickerView.isHidden {
+            // open picker view, change arrow to up on button
             pickerView.display()
+            showPickerButton.setImage(UIImage(systemName: "chevron.up.circle.fill"), for: .normal)
         } else {
+            // close picker view, change arrow to down on button
             pickerView.hide()
+            showPickerButton.setImage(UIImage(systemName: "chevron.down.circle.fill"), for: .normal)
         }
     }
 
@@ -208,6 +213,10 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     @IBAction func closePressed(_ sender: UIButton) {
         collectionView.isUserInteractionEnabled = true
         detailView.hide()
+    }
+
+    @IBAction func aboutPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "viewAbout", sender: Any?.self)
     }
 }
 

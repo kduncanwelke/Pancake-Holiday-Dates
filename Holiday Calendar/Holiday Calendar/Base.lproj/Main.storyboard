@@ -153,11 +153,13 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXs-vP-bT1">
                                 <rect key="frame" x="157" y="529.5" width="100.5" height="33.5"/>
-                                <color key="tintColor" red="0.68235301969999995" green="0.47058826679999999" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="arrow.clockwise.heart.fill" catalog="system"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="arrow.clockwise.heart.fill" catalog="system" title=" Reload">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.68235301969999995" green="0.47058826679999999" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.68235294120000001" green="0.47058826679999999" blue="0.3058823645" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="reloadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Om-WU-Jtp"/>
@@ -298,10 +300,12 @@
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8R-I9-3QB">
                                         <rect key="frame" x="153" y="242" width="67" height="33.5"/>
-                                        <color key="tintColor" red="0.5450980392" green="0.37647058820000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Close">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="baseForegroundColor" red="0.68235301969999995" green="0.47058826679999999" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.68235294120000001" green="0.47058826679999999" blue="0.3058823645" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="closePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7j6-qT-Q7x"/>
@@ -376,6 +380,18 @@
                                     <constraint firstItem="C6W-9I-4Om" firstAttribute="top" secondItem="5S9-gV-PqS" secondAttribute="top" constant="22" id="xRH-Ra-wW9"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYw-R9-H8l">
+                                <rect key="frame" x="10" y="836" width="44" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="info.circle.fill" catalog="system">
+                                    <color key="baseForegroundColor" red="0.68235301969999995" green="0.47058826679999999" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.68235294117647061" green="0.47058826679999999" blue="0.3058823645" alpha="0.25103635204081631" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="aboutPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q78-m6-geT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.85882352941176465" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -395,6 +411,7 @@
                             <constraint firstItem="KTm-wE-Sqn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ESP-E4-JCn"/>
                             <constraint firstItem="n1l-Uu-rxf" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="FWD-9W-xKb"/>
                             <constraint firstItem="ngF-ly-QYc" firstAttribute="centerX" secondItem="Y7d-9x-g2D" secondAttribute="centerX" id="Gnc-DY-6s6"/>
+                            <constraint firstItem="NYw-R9-H8l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="JH2-kM-OZS"/>
                             <constraint firstItem="VHX-vC-dku" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.85" id="JM6-4S-M6b"/>
                             <constraint firstItem="QBK-l3-fz0" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Khh-wP-HqH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ibp-qK-z68" secondAttribute="bottom" constant="10" id="Ox9-46-NcE"/>
@@ -417,6 +434,7 @@
                             <constraint firstItem="5S9-gV-PqS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xe7-zZ-IjB"/>
                             <constraint firstItem="IA1-Yv-OZ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xn9-uP-9DW"/>
                             <constraint firstItem="AbP-Kj-pAW" firstAttribute="width" relation="lessThanOrEqual" secondItem="QBK-l3-fz0" secondAttribute="width" id="xt8-6j-LTh"/>
+                            <constraint firstItem="NYw-R9-H8l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="5" id="y0g-sY-lJv"/>
                             <constraint firstItem="b5W-Fp-Jbd" firstAttribute="centerX" secondItem="Y7d-9x-g2D" secondAttribute="centerX" id="ycN-Sq-1YF"/>
                             <constraint firstItem="XRx-Tm-Fzf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="zE1-AQ-lTy"/>
                             <constraint firstItem="QBK-l3-fz0" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="zR8-Yr-9pm"/>
@@ -438,6 +456,7 @@
                         <outlet property="reloadButton" destination="OXs-vP-bT1" id="vhq-nd-OvN"/>
                         <outlet property="showPickerButton" destination="lU8-U8-7Oq" id="kDt-Hb-XHE"/>
                         <outlet property="tooFast" destination="5S9-gV-PqS" id="zhI-Tp-BMg"/>
+                        <segue destination="GdP-kE-F0j" kind="show" identifier="viewAbout" id="Al0-kU-dmj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -449,12 +468,135 @@
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="65.625"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="GFv-jY-ApR">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="GdP-kE-F0j" customClass="AboutViewController" customModule="Holiday_Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bh2-Wf-E21">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w53-B6-Zn3">
+                                <rect key="frame" x="0.0" y="49" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHl-S6-Frn">
+                                        <rect key="frame" x="179" y="13" width="56" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.68241920020000002" green="0.47024238550000003" blue="0.30639022459999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F8T-cX-dSI"/>
+                                    <constraint firstItem="wHl-S6-Frn" firstAttribute="centerX" secondItem="w53-B6-Zn3" secondAttribute="centerX" id="G7L-gd-wVu"/>
+                                    <constraint firstItem="wHl-S6-Frn" firstAttribute="centerY" secondItem="w53-B6-Zn3" secondAttribute="centerY" id="hej-gY-XwO"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aqG-HK-46P">
+                                <rect key="frame" x="25" y="124" width="364" height="477.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pancake Holiday Dates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DF-9b-HDY">
+                                        <rect key="frame" x="26.5" y="0.0" width="311.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <color key="textColor" red="0.68235294120000001" green="0.44682837689999999" blue="0.35347706420000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun holiday calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3r9-1I-meN">
+                                        <rect key="frame" x="89" y="56" width="186" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" red="0.68235294120000001" green="0.44682837689999999" blue="0.35347706420000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pancakekitty" translatesAutoresizingMaskIntoConstraints="NO" id="TlH-33-Ago">
+                                        <rect key="frame" x="89" y="100" width="186" height="128.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TlH-33-Ago" secondAttribute="height" multiplier="1:0.69" id="ac0-Eu-Zia"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App and art by kduncan-welke.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkg-Cl-9la">
+                                        <rect key="frame" x="44" y="248.5" width="276" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" red="0.68235294120000001" green="0.44682837689999999" blue="0.35347706420000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN3-Nb-ij0">
+                                        <rect key="frame" x="0.0" y="289" width="364" height="81.5"/>
+                                        <string key="text">This app uses data from Abstract API's Holidays service (https://www.abstractapi.com). Abstract is the owner and creator of this data, which is used by permission.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.68235294120000001" green="0.44682837689999999" blue="0.35347706420000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ff-pl-TzM">
+                                        <rect key="frame" x="103.5" y="390.5" width="157" height="33.5"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Visit Abstract API">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="baseForegroundColor" red="0.68235301969999995" green="0.47058826679999999" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.68235294120000001" green="0.47058826679999999" blue="0.3058823645" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="visitAPI:" destination="GdP-kE-F0j" eventType="touchUpInside" id="puG-1f-hNk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oy8-34-yj7">
+                                        <rect key="frame" x="80" y="444" width="204" height="33.5"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Visit Developer Website">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="baseForegroundColor" red="0.68235301969999995" green="0.47058826679999999" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.68235294120000001" green="0.47058826679999999" blue="0.3058823645" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="visitSite:" destination="GdP-kE-F0j" eventType="touchUpInside" id="rU0-lT-y44"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voz-8R-KJT">
+                                <rect key="frame" x="173.5" y="808.5" width="67" height="33.5"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Close">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.68235301969999995" green="0.47058826679999999" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.68235294120000001" green="0.47058826679999999" blue="0.3058823645" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeTapped:" destination="GdP-kE-F0j" eventType="touchUpInside" id="Wrd-0k-vSg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f0G-M2-PRe"/>
+                        <color key="backgroundColor" red="0.97254908080000002" green="0.85882353779999998" blue="0.74509805439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aqG-HK-46P" secondAttribute="trailing" constant="25" id="1n8-OH-RxB"/>
+                            <constraint firstItem="voz-8R-KJT" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aqG-HK-46P" secondAttribute="bottom" constant="25" id="DkE-1e-5df"/>
+                            <constraint firstItem="aqG-HK-46P" firstAttribute="top" secondItem="w53-B6-Zn3" secondAttribute="bottom" constant="25" id="Khb-B0-DH7"/>
+                            <constraint firstItem="f0G-M2-PRe" firstAttribute="bottom" secondItem="voz-8R-KJT" secondAttribute="bottom" constant="20" id="Lca-PP-DpE"/>
+                            <constraint firstItem="w53-B6-Zn3" firstAttribute="leading" secondItem="f0G-M2-PRe" secondAttribute="leading" id="Qfp-4x-h4t"/>
+                            <constraint firstItem="w53-B6-Zn3" firstAttribute="trailing" secondItem="f0G-M2-PRe" secondAttribute="trailing" id="a92-yR-ViH"/>
+                            <constraint firstItem="TlH-33-Ago" firstAttribute="width" relation="lessThanOrEqual" secondItem="Bh2-Wf-E21" secondAttribute="width" multiplier="0.45" id="cfd-8G-bKL"/>
+                            <constraint firstItem="aqG-HK-46P" firstAttribute="leading" secondItem="f0G-M2-PRe" secondAttribute="leading" constant="25" id="eZo-7m-CpH"/>
+                            <constraint firstItem="voz-8R-KJT" firstAttribute="centerX" secondItem="Bh2-Wf-E21" secondAttribute="centerX" id="ial-bF-4W7"/>
+                            <constraint firstItem="w53-B6-Zn3" firstAttribute="top" secondItem="f0G-M2-PRe" secondAttribute="top" constant="5" id="zk5-26-nwc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N5T-ad-krQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lN3-Kj-yj8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="66"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.clockwise.heart.fill" catalog="system" width="128" height="109"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="chevron.down.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="pancakekitty" width="356" height="246"/>
         <image name="pancakekittysmall" width="72" height="50"/>
     </resources>
