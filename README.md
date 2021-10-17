@@ -3,7 +3,7 @@ Fun holiday calendar
 
 This app uses data from the [Abstract API](https://app.abstractapi.com) Holidays service to show holidays for the U.S. on a simple monthly calendar view. For an element of whimsy, the app employes a character - pancake kitty - as a mascot and to mark calendar dates that have a holiday. The user can tap on one of these dates to view a pop up that lists brief details summarizing the holiday(s) for that day.
 
-<center><img src="https://i.ibb.co/GnvnHhh/Simulator-Screen-Shot-i-Phone-11-2021-10-17-at-14-36-33.png" width="25%"/></center>
+<img src="https://i.ibb.co/GnvnHhh/Simulator-Screen-Shot-i-Phone-11-2021-10-17-at-14-36-33.png" width="25%"/>
 
 ## Features
 
