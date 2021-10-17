@@ -211,6 +211,9 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     }
 
     @IBAction func closePressed(_ sender: UIButton) {
+        if let selection = collectionView.indexPathsForSelectedItems?.first {
+            collectionView.deselectItem(at: selection, animated: false)
+        }
         collectionView.isUserInteractionEnabled = true
         detailView.hide()
     }
