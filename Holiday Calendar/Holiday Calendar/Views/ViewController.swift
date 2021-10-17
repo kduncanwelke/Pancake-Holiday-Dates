@@ -211,9 +211,11 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     }
 
     @IBAction func closePressed(_ sender: UIButton) {
+        // deselect current selection when closing holiday info view
         if let selection = collectionView.indexPathsForSelectedItems?.first {
             collectionView.deselectItem(at: selection, animated: false)
         }
+        collectionView.reloadData()
         collectionView.isUserInteractionEnabled = true
         detailView.hide()
     }
